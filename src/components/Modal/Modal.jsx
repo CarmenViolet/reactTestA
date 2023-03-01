@@ -18,7 +18,7 @@ const Modal = ({ closeModal, toDos }) => {
     window.addEventListener('keydown', closeESC);
 
     return () => window.removeEventListener('keydown', closeESC);
-  }, [closeESC]);
+  }, []);
 
   return (
     <div className={css.overlay} onClick={closeOverlay}>
